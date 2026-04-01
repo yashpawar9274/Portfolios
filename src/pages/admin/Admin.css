@@ -1,0 +1,186 @@
+.admin-main {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: #121212;
+}
+
+.admin-header-div {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.admin-header {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2a2a2a;
+  letter-spacing: 0.6px;
+}
+
+.admin-header-div p {
+  font-size: 1.05rem;
+  color: #5a5a5a;
+  margin: 0;
+}
+
+.admin-content {
+  background: linear-gradient(135deg, #ffffff, #f6f8fb);
+  border: 1px solid #dce4eb;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(38, 38, 38, 0.12);
+  padding: 1.2rem;
+}
+
+.admin-textarea {
+  width: 100%;
+  min-height: 520px;
+  padding: 1rem;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border: 1px solid #aed0f4;
+  border-radius: 12px;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+  background: #fbfdff;
+  color: #1f1f1f;
+}
+
+.admin-textarea:focus {
+  outline: none;
+  border-color: #437ed3;
+  box-shadow: 0 0 0 3px rgba(67, 126, 211, 0.18);
+}
+
+.admin-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.admin-button {
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 170px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.14);
+}
+
+.admin-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(31, 41, 55, 0.22);
+}
+
+.admin-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(31, 41, 55, 0.24);
+}
+
+.admin-info-box {
+  background: #eff6ff;
+  border: 1px solid #a9c8f8;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.admin-info-box h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  color: #223a5f;
+}
+
+.admin-info-box p,
+.admin-info-box li {
+  color: #324a6a;
+}
+
+.admin-subheading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #264d83;
+  margin-bottom: 0.5rem;
+}
+
+.admin-section {
+  background: #fff;
+  border: 1px solid #d5e0f2;
+  border-radius: 14px;
+  padding: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-section h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1a345f;
+}
+
+.admin-section-text {
+  color: #446087;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+.admin-preview {
+  background: #f8fbff;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 0.6rem;
+}
+
+.preview-item {
+  background: #ffffff;
+  border: 1px solid #c7d8f2;
+  border-radius: 10px;
+  padding: 0.55rem;
+  color: #2a3857;
+  font-size: 0.93rem;
+}
+
+.admin-hint {
+  margin-top: 0.8rem;
+  font-size: 0.93rem;
+  color: #3e4f72;
+}
+
+.admin-button-warning {
+  background-color: #f45f6d;
+  border: 1px solid #f45365;
+}
+
+.admin-button-warning:hover {
+  background-color: #dd5561;
+}
+
+@media (max-width: 768px) {
+  .admin-main {
+    padding: 1rem;
+  }
+
+  .admin-textarea {
+    min-height: 400px;
+  }
+
+  .admin-buttons {
+    flex-direction: column;
+  }
+
+  .admin-button {
+    width: 100%;
+    min-width: auto;
+  }
+}
