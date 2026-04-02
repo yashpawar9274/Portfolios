@@ -21,7 +21,7 @@
 ✔️ Contact me\
 ✔️ Resume Viewer
 
-To view a live example, **[click here](https://ashutosh1919.github.io/)**
+To view a live example, **[click here](https://yashpawar28.vercel.app//)**
 
 # Table of Contents
  - [Clone and Use](#clone-and-use)
